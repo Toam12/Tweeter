@@ -25,7 +25,7 @@ const Renderer = function(){
 				$container.append(createComments(posts[pIndex].comments[cIndex].id, posts[pIndex].comments[cIndex].text))
 			}
 
-			let findPost = $container.find(`#${posts[pIndex].id}`)
+			let findPost = $container.find(`   #${posts[pIndex].id}`)
 			let addTheInputs = findPost.append(addInputs())
 			let addTheButtons = findPost.append(addButtons())
 			return{
